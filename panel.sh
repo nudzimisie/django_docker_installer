@@ -17,6 +17,7 @@ sh $PWD/django_docker_installer/sshgen.sh
 9)
 read -p 'Którą aplikację chcesz aktualizować? [domyślnie: pakiet instalacyjny]' app
 app=${app:-django_docker_installer}
+echo $app
 sh $PWD/$app/update.sh
 ;;
 0)
