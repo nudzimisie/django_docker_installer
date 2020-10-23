@@ -1,9 +1,9 @@
 #!/bin/sh
-if ! command python --version >/dev/null && ! command python3 --version >/dev/null
+if ! command python --version >/dev/null || ! command python3 --version >/dev/null
 then
     sudo apt-get install python3.8
 fi
-if ! command pip --version >/dev/null && ! command pip3 --version >/dev/null
+if ! command pip --version >/dev/null || ! command pip3 --version >/dev/null
 then
     sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
     if ! command python3 get-pip.py >/dev/null || command python get-pip.py
