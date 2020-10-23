@@ -14,6 +14,8 @@ sh $PWD/django_docker_installer/docker_install.sh
 ;;
 2)
 sh $PWD/django_docker_installer/sshgen.sh
+3)
+sh $PWD/django_docker_installer/python_install.sh
 ;;
 9)
 read -p 'Którą aplikację chcesz aktualizować? [domyślnie: pakiet instalacyjny]' app
