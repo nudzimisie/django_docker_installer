@@ -6,7 +6,10 @@ fi
 if ! command pip --version >/dev/null || ! command pip3 --version >/dev/null
 then
     sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-    if ! command python3 get-pip.py >/dev/null || command python get-pip.py
+    if ! command python3 get-pip.py >/dev/null
+    then 
+        command python get-pip.py
+    fi
 fi
 python() { python3 "$@"; }
 export -f python
