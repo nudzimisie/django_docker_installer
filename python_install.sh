@@ -15,6 +15,6 @@ python() { python3 "$@"; }
 export -p python
 pip() { pip3 "$@"; }
 export -p pip
-pip install -R requirements.txt
+pip install -r requirements.txt
 echo Python i wszystkie niezbędne składniki zaostały zainstalowane 
 read -r -s -p $'\e[94mnacisnij enter by kontynuowac\n\e[39m'
