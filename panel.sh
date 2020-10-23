@@ -1,12 +1,13 @@
 #!/bin/sh
+while read -p ': ' option
+do
+clear
 echo "\e[34mWitaj w panelu instalatora. Co chcesz zrobić?\e[39m"
 echo 1. Zainstalowac dockera
 echo 2. Wygenerować klucze ssh
 echo 3. Zainstaluj pythona i niezbędne składniki
 echo 9. Aktualizuj aplikacje
 echo 0. Zakończ
-while read -p ': ' option
-do
 case $option in
 1)
 sh $PWD/django_docker_installer/docker_install.sh

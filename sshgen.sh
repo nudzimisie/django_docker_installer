@@ -11,4 +11,4 @@ echo '[przykladowo: https://github.com/settings/keys]'
 echo
 cat $sshpath/$sshkey.pub
 echo
-read -t 20 -r -s -p $'nacisnij enter lub poczekaj 20s by kontynuowac\n'
+read -r -s -p $'\e[44m nacisnij enter by kontynuowac \n\e[49m'

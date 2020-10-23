@@ -16,7 +16,7 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
-read -t 20 -r -s -p $'\e[94mnacisnij enter lub poczekaj 20s by kontynuowac\n\e[39m'
+read -r -s -p $'\e[44m nacisnij enter by kontynuowac \n\e[49m'
 else
 echo "Docker jest już zainstalowany"
 fi
