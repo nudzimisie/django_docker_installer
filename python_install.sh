@@ -12,9 +12,9 @@ then
     fi
 fi
 python() { python3 "$@"; }
-export -f python
+export -p python
 pip() { pip3 "$@"; }
-export -f pip
+export -p pip
 pip install -R requirements.txt
 echo Python i wszystkie niezbędne składniki zaostały zainstalowane 
-read -t 20 -r -s -p $'\e[94mnacisnij enter lub poczekaj 20s by kontynuowac\n\e[39m'
+read -r -s -p $'\e[94mnacisnij enter by kontynuowac\n\e[39m'
